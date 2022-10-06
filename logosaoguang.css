@@ -1,0 +1,25 @@
+.navbar-brand{
+position:relative;
+overflow:hidden;
+margin: 0px 0 0 0px;
+}
+.navbar-brand:before{
+content:""; 
+position: absolute; 
+left: -665px; 
+top: -460px; 
+width: 200px; 
+height: 15px; 
+background-color: rgba(255,255,255,.5);
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg); 
+transform: rotate(-45deg);
+-webkit-animation: searchLights 10s ease-in 0s infinite;
+-o-animation: searchLights 6s ease-in 0s infinite;
+animation: searchLights 10s ease-in 0s infinite;
+}
+@-moz-keyframes searchLights{50%{left: -120px; top: 0;} 65%{left: 350px; top: 0px;}}
+@keyframes searchLights{40%{left: -120px; top: 0;} 60%{left: 350px; top: 0px;} 80%{left: -120px; top: 0px;}
+}
